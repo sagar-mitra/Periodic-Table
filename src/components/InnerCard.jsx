@@ -102,3 +102,29 @@ const InnerCard = ({ cardData }) => {
 };
 
 export default InnerCard;
+
+
+/* 
+===============================
+📌 TILT CARD EFFECT – SUMMARY
+===============================
+1. Created motion values (x, y) with springs for smooth animations.
+
+2. Mapped mouse position to rotateX / rotateY using useTransform.
+   - rotateX tilts card up/down based on Y.
+   - rotateY tilts card left/right based on X.
+
+3. Used handleMouseMove to calculate mouse position inside the card
+   and convert it into a percentage offset (-0.5 → 0.5).
+
+4. Reset tilt with handleMouseLeave.
+
+5. Applied rotateX / rotateY styles to the motion.div with 
+   transformStyle: "preserve-3d".
+
+6. Added whileHover scale for subtle zoom effect.
+
+7. Pushed inner content forward with translateZ(25px) so text/details
+   "float" above the card background for extra depth.
+===============================
+*/
