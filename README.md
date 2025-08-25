@@ -1,4 +1,8 @@
+
 <h1 align="center">Periodic Table </h1>
+
+<img style="border-radius:8px;" src="./src/assets/perioic-table.png"/>
+
 
 #### An interactive web application displaying the periodic table of elements with detailed information and modern design.
 
