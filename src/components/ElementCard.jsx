@@ -15,7 +15,7 @@ const ElementCard = ({ setCardClicked, cardData }) => {
 
   return (
     <div
-      className={`bg-[#121212]/80  max-w-[1400px] w-full max-h-screen p-4 flex flex-col items-center justify-center fixed inset-0 mx-auto z-10 ${
+      className={`bg-[#121212]/80 w-full max-h-screen p-4 flex flex-col items-center justify-center fixed inset-0 mx-auto z-10 ${
         close && "hidden"
       }`}
       onClick={handleCloseButton}
@@ -25,7 +25,7 @@ const ElementCard = ({ setCardClicked, cardData }) => {
 
       <div
         style={{ backgroundColor: cardBG, color: textColor }}
-        className="max-w-[980px] w-[980px] h-[620px] font-(family-name:--font-inter) rounded-2xl p-[60px] flex items-center justify-between "
+        className="w-[350px] h-[700px]  md:max-w-[700px] md:w-[700px] md:h-[500px] lg:max-w-[980px] lg:h-[500px] xl:max-w-[980px] lg:w-[980px] xl:h-[620px]  font-(family-name:--font-inter) rounded-2xl p-[40px] lg:p-[60px] flex items-center justify-between max-md:flex-col"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Inner Card  */}

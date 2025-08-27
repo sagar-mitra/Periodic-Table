@@ -21,7 +21,7 @@ const Footer = () => {
   return (
     <div
       ref={footer}
-      className="max-w-[1400px] w-[1400px] mx-auto pt-6 mt-20 pb-16 flex justify-between border-t border-gray-600 font-(family-name:--font-sans) text-[1.25rem] text-[#c7c7c7]"
+      className="lg:max-w-[1024px] lg:w-[1024px] xl:max-w-[1200px] xl:w-[1200px] 2xl:max-w-[1400px] 2xl:w-[1400px]  mx-auto pt-6 mt-20 pb-16 flex justify-between max-lg:flex-col-reverse max-lg:items-center max-lg:gap-3 border-t border-gray-600 font-(family-name:--font-sans) text-base lg:text-[1.25rem] text-[#c7c7c7]  "
     >
       <motion.div
         initial={{ x: -20 }}

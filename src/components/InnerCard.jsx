@@ -51,7 +51,7 @@ const InnerCard = ({ cardData }) => {
   } = cardData;
   return (
     // card wrapper
-    <div className="w-[350px] h-[500px]">
+    <div className="w-[260px] h-[320px] md:w-[290px] md:h-[400px] xl:w-[350px] xl:h-[500px] max-md:overflow-y-scroll">
       {/* card */}
       <motion.div
         style={{
@@ -63,36 +63,36 @@ const InnerCard = ({ cardData }) => {
         whileHover={{scale: 1.05, transition: { duration: 0.3, ease: "easeOut" } }}
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
-        className="w-full h-full rounded-xl p-[30px] flex flex-col justify-between"
+        className="w-full h-full rounded-xl p-[10px] md:p-[30px] flex flex-col justify-between"
       >
-        <div style={{transform: "translateZ(25px)"}} className="flex flex-col gap-3">
-          <h2 className="text-2xl font-bold">{symbol}</h2>
+        <div style={{transform: "translateZ(25px)"}} className="flex flex-col gap-1 lg:gap-3">
+          <h2 className="text-lg md:text-xl xl:text-2xl font-bold">{symbol}</h2>
 
           <div className="border w-full opacity-20 " />
 
           <div>
-            <h3 className="text-[2.5rem] font-bold tracking-tight">
+            <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-[2.5rem] font-bold tracking-tight">
               {name.toLowerCase()}
             </h3>
-            <span className="text-sm font-bold opacity-50">
+            <span className="text-xs xl:text-sm font-bold opacity-50">
               {howToPronounce.toLowerCase()}
             </span>
           </div>
 
           <div className="border w-full opacity-20 " />
 
-          <p className="text-[1.38rem] font-bold tracking-tight">{category}</p>
+          <p className="md:text-lg lg:text-xl xl:text-[1.38rem] font-bold tracking-tight">{category}</p>
         </div>
 
         <div style={{transform: "translateZ(25px)"}} className="flex flex-col items-end gap-3">
-          <div className="text-xl font-bold text-right tracking-tight">
+          <div className="md:text-lg xl:text-xl font-bold text-right tracking-tight">
             <h4>{discoveredYear}</h4>
             <p>{discoveredBy}</p>
           </div>
 
           <div className="border w-full opacity-20 " />
 
-          <p className="text-[2.5rem] font-extralight">
+          <p className="text-xl md:text-2xl lg:text-3xl xl:text-[2.5rem] font-extralight">
             #<span className="font-bold">{atomicNumber}</span>
           </p>
         </div>

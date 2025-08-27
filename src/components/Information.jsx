@@ -13,7 +13,7 @@ const Information = ({ cardData }) => {
   } = cardData;
 
   return (
-    <div className="w-[420px] h-[500px] flex flex-col justify-between text-[var(--text-s)] text-base font-medium font-(family-name:--font-dm-mono) ">
+    <div className="w-[260px] h-[240px] md:w-[300px] lg:w-[320px] md:h-[400px] xl:w-[420px] xl:h-[500px] flex flex-col justify-between text-[var(--text-s)] text-sm xl:text-base font-medium font-(family-name:--font-dm-mono)">
       <dl className="group/info">
         <div className="flex justify-between gap-2 items-center">
           <dt className=" uppercase tracking-wide group-hover/info:text-[var(--text-p)] transition-all duration-300 ease-linear">

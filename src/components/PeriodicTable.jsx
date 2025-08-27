@@ -19,14 +19,14 @@ const PeriodicTable = () => {
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.2, ease: "linear" }}
-      className="max-w-[1400px] w-[1400px] mx-auto mt-20"
+      className="w-full 2xl:max-w-[1400px] 2xl:w-[1400px] mx-auto mt-20  max-lg:px-3 max-xl:overflow-x-scroll xl:px-2 2xl:px-0"
     >
       {/* Main Elements  */}
-      <div className= "grid gap-x-1 place-items-center">
+      <div className= "grid gap-x-2 2xl:gap-x-1 place-items-center">
         {mainElements.map((el) => {
           return (
             <button
-              onClick={() => handleCardButton(el)}
+              onClick={el.name === "" ? undefined : () => handleCardButton(el)}
               style={{
                 gridRow: el?.position?.row,
                 gridColumn: el?.position?.col >= 3 ? el.position.col + 1 : el.position.col,
@@ -40,7 +40,7 @@ const PeriodicTable = () => {
       </div>
 
       {/* Lanthanide Elements */}
-      <div className="grid grid-cols-18 place-items-center mt-8">
+      <div className="grid grid-cols-18 max-lg:gap-x-15 place-items-center mt-8">
         {lanthanideElements.map((el) => {
           return (
             <button
@@ -49,7 +49,7 @@ const PeriodicTable = () => {
                 gridRow: el?.position?.row,
                 gridColumn: el?.position?.col,
               }}
-              className="ml-5"
+              className="ml-20 lg:ml-5"
               key={el.index}
             >
               <Element data={el} />
@@ -59,7 +59,7 @@ const PeriodicTable = () => {
       </div>
 
       {/* Actinide Elements */}
-      <div className="grid grid-cols-18 place-items-center mt-1">
+      <div className="grid grid-cols-18 max-lg:gap-x-15 place-items-center mt-1">
         {actinideElements.map((el) => {
           return (
             <button
@@ -68,7 +68,7 @@ const PeriodicTable = () => {
                 gridRow: el?.position?.row,
                 gridColumn: el?.position?.col,
               }}
-              className="ml-5"
+              className="ml-20 lg:ml-5"
               key={el.index}
             >
               <Element data={el} />
