@@ -24,12 +24,12 @@ const Footer = () => {
       className="lg:max-w-[1024px] lg:w-[1024px] xl:max-w-[1200px] xl:w-[1200px] 2xl:max-w-[1400px] 2xl:w-[1400px]  mx-auto pt-6 mt-20 pb-16 flex justify-between max-lg:flex-col-reverse max-lg:items-center max-lg:gap-3 border-t border-gray-600 font-(family-name:--font-sans) text-base lg:text-[1.25rem] text-[#c7c7c7]  "
     >
       <motion.div
-        initial={{ x: -20 }}
-        whileInView={{ x: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
+        initial={{ y: 20 }}
+        whileInView={{ y: 0 }}
+        viewport={{ once: true, amount: 0.5 }}
         transition={{ duration: 0.5, ease: "linear" }}
       >
-        Developed by Sagar
+        Developed with 💗 by Sagar
       </motion.div>
 
       <div className="flex gap-4">
@@ -38,7 +38,7 @@ const Footer = () => {
             <motion.div
               initial={{ y: 20 }}
               whileInView={{ y: 0 }}
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               transition={{ duration: 0.5, ease: "linear" }}
               key={index}
               className="group flex gap-4"
@@ -65,14 +65,7 @@ const Footer = () => {
         })}
       </div>
 
-      <motion.div
-        initial={{ x: 20 }}
-        whileInView={{ x: 0 }}
-        viewport={{ once: false, amount: 0.5 }}
-        transition={{ duration: 0.5, ease: "linear" }}
-      >
-        {new Date().getFullYear()}
-      </motion.div>
+  
     </div>
   );
 };
