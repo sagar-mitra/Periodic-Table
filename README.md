@@ -62,4 +62,4 @@ Visit http://localhost:5173 (or the port shown in your terminal)
 ```
 
 
-<h2 align="center">⭐ If you found this project useful, please consider giving it a star! ⭐ </h2>
+<h4 align="center">⭐ If you found this project useful, please consider giving it a star! ⭐ </h4>
