@@ -19,7 +19,7 @@ const PeriodicTable = () => {
       initial={{ y: 10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, delay: 0.2, ease: "linear" }}
-      className="w-full 2xl:max-w-[1400px] 2xl:w-[1400px] mx-auto mt-20  max-lg:px-3 max-xl:overflow-x-scroll xl:px-2 2xl:px-0"
+      className="scrollbar-container w-full 2xl:max-w-[1400px] 2xl:w-[1400px] mx-auto mt-20  max-lg:px-3 max-xl:overflow-x-scroll xl:px-2 2xl:px-0"
     >
       {/* Main Elements  */}
       <div className= "grid gap-x-2 2xl:gap-x-1 place-items-center">

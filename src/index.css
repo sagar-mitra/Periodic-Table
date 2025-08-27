@@ -12,3 +12,13 @@
 }
 
 /* font-(family-name:--font-logo) */
+
+/* Hide scrollbar but allow scrolling */
+.scrollbar-container::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-container {
+  -ms-overflow-style: none;  /* IE/Edge */
+  scrollbar-width: none;     /* Firefox */
+}
